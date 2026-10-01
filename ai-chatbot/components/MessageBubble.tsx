@@ -85,7 +85,7 @@ function CodeBlock({ className, children }: { className?: string; children?: Rea
   );
 }
 
-export default function MessageBubble({ message, waiting, onRetry }: Props) {
+export default function MessageBubble({ message, waiting, onRetry, onSwitchModel }: Props) {
   /* ── User bubble ── */
   if (message.role === "user") {
     return (
