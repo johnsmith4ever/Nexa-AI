@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 3 80 80" fill="none">
+  <defs>
+    <linearGradient id="nexa" x1="28" y1="14" x2="82" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7FF"/>
+      <stop offset="0.48" stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <path d="M55 8C57 29 67 39 88 42C67 45 57 55 55 78C53 55 43 45 22 42C43 39 53 29 55 8Z" fill="url(#nexa)"/>
+  <path d="M55 20C56.4 31.8 62.2 37.6 74 39C62.2 40.4 56.4 46.2 55 58C53.6 46.2 47.8 40.4 36 39C47.8 37.6 53.6 31.8 55 20Z" fill="white" fill-opacity="0.22"/>
+</svg>
