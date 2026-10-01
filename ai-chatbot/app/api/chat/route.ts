@@ -267,11 +267,11 @@ export async function POST(request: NextRequest) {
     if (model.provider === "deepseek") base.extra_body = { thinking: { type: "disabled" } };
 
     try {
-      completion = await openaiClient.chat.completions.create(base as any, { signal: controller.signal });
+      completion = (await openaiClient.chat.completions.create(base as any, { signal: controller.signal })) as any;
     } catch (firstError) {
       if (!isReasoning) return errorResponse(classifyError(firstError, model.label));
       const retry = { ...base }; delete retry.reasoning_effort;
-      try { completion = await openaiClient.chat.completions.create(retry as any, { signal: controller.signal }); }
+      try { completion = (await openaiClient.chat.completions.create(retry as any, { signal: controller.signal })) as any; }
       catch (retryError) { return errorResponse(classifyError(retryError, model.label)); }
     }
   }
