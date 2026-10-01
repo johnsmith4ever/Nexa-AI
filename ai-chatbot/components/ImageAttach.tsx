@@ -109,7 +109,7 @@ export default function ImageAttach({ images, enabled, disabledReason, onChange,
         title={enabled ? "Attach images" : disabledReason}
         aria-label="Attach images"
         style={{
-          display:"flex",alignItems:"center",justifyContent:"center",
+          alignItems:"center",justifyContent:"center",
           width:32,height:32,borderRadius:"50%",border:"none",
           background:"transparent",
           color:"var(--text-muted)",cursor:enabled?"pointer":"not-allowed",
